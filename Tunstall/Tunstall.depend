@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1623615639 source:c:\users\berna\desktop\subjektai_2021_pavasaris\aa\projektas\tunstall\main.cpp
+	"SourceHeaders\SuffixTree.h"
+	"SourceHeaders\TunstallStd.h"
+	"SourceHeaders\Encode.h"
+	"SourceHeaders\TunstallModified.h"
+	"SourceHeaders\Decode.h"
+
+1623586301 c:\users\berna\desktop\subjektai_2021_pavasaris\aa\projektas\tunstall\sourceheaders\suffixtree.h
+	"Common.h"
+
+1623586294 c:\users\berna\desktop\subjektai_2021_pavasaris\aa\projektas\tunstall\sourceheaders\common.h
+	<iostream>
+	<fstream>
+	<unordered_map>
+	<math.h>
+	<cstring>
+	<vector>
+
+1623483722 c:\users\berna\desktop\subjektai_2021_pavasaris\aa\projektas\tunstall\sourceheaders\tunstallstd.h
+	"Common.h"
+
+1623481942 c:\users\berna\desktop\subjektai_2021_pavasaris\aa\projektas\tunstall\sourceheaders\encode.h
+
+1623518308 c:\users\berna\desktop\subjektai_2021_pavasaris\aa\projektas\tunstall\sourceheaders\tunstallmodified.h
+	"Common.h"
+
+1623481788 c:\users\berna\desktop\subjektai_2021_pavasaris\aa\projektas\tunstall\sourceheaders\decode.h
+
