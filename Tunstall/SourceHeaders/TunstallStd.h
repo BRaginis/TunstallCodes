@@ -190,7 +190,7 @@ UINT& fileSize
     readerStream.open(filename, std::ifstream::binary);
     if (!readerStream.is_open())
     {
-        std::cout<<"nepavyko atidaryti failo, programa baigia darba\n\n";
+        std::cout<<"Nepavyko atidaryti failo, programa baigia darba\n\n";
         return 0;
     }
 

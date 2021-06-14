@@ -27,3 +27,31 @@
 
 1623481788 c:\users\berna\desktop\subjektai_2021_pavasaris\aa\projektas\tunstall\sourceheaders\decode.h
 
+1623696548 source:c:\users\berna\documents\github\tunstallcodes\tunstall\main.cpp
+	"SourceHeaders\SuffixTree.h"
+	"SourceHeaders\TunstallStd.h"
+	"SourceHeaders\Encode.h"
+	"SourceHeaders\TunstallModified.h"
+	"SourceHeaders\Decode.h"
+
+1623692270 c:\users\berna\documents\github\tunstallcodes\tunstall\sourceheaders\suffixtree.h
+	"Common.h"
+
+1623692270 c:\users\berna\documents\github\tunstallcodes\tunstall\sourceheaders\common.h
+	<iostream>
+	<fstream>
+	<unordered_map>
+	<math.h>
+	<cstring>
+	<vector>
+
+1623696289 c:\users\berna\documents\github\tunstallcodes\tunstall\sourceheaders\tunstallstd.h
+	"Common.h"
+
+1623692270 c:\users\berna\documents\github\tunstallcodes\tunstall\sourceheaders\encode.h
+
+1623692270 c:\users\berna\documents\github\tunstallcodes\tunstall\sourceheaders\tunstallmodified.h
+	"Common.h"
+
+1623696636 c:\users\berna\documents\github\tunstallcodes\tunstall\sourceheaders\decode.h
+

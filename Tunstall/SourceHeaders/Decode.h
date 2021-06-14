@@ -152,7 +152,7 @@ UINT filesize
     free(byteSequence);
 }
 
-UDICT_UINT_CHBUFF decodeFile
+void decodeFile
 (
 const char * filename
 )
@@ -163,7 +163,7 @@ const char * filename
     readStream.open(filename, std::ifstream::binary);
     if (!readStream.is_open())
     {
-        return readDictionary;
+        return;
     }
     readStream.seekg(0, std::ios_base::seekdir::_S_beg);
 
@@ -177,13 +177,13 @@ const char * filename
     char * dotIdx = strchr(filename, '.');
 
     std::string decodedFileName = std::string(filename, dotIdx - filename);
-    decodedFileName += "_Decoded.tnst";
+    decodedFileName += "_Decoded";
     std::ofstream writeStream;
     writeStream.open(decodedFileName, std::ofstream::binary);
     if(!writeStream.is_open())
     {
         readStream.close();
-        return readDictionary;
+        return;
     }
 
     writeStream.seekp (0, std::ios_base::seekdir::_S_beg);
@@ -193,7 +193,7 @@ const char * filename
     readStream.close();
     writeStream.close();
 
-    return readDictionary;
+    return;
 }
 
 
