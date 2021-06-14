@@ -4,4 +4,10 @@
 
 ### Programoje realizuotas klasikinis Tunstall kodas ir jo modifikacija, naudojanti priesagų medį.
 
-### Paleidžiant vykdomąjį failą reikia nurodyti failą, kurį norima suspausti, ir kodo ilgį bitais bei, papildomai, -d požymį, reiškiantį "dekoduoti".
+### Paleidžiant vykdomąjį failą reikia nurodyti:
+
+#### failo, kurį norima užkoduoti, vardą ir kodo žodžio ilgį bitais.
+
+### arba
+
+#### failo, kurį norima dekoduoti, vardą ir požymį '-d'. Dekoduojamas failas turi būti užkoduotas šia programa ir turėti plėtinį '.tnst'.
