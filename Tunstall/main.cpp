@@ -53,8 +53,10 @@ int main(int argc, char *argv[])
 
     if (decode)
     {
-        decodeFile(filename.c_str());
-        std::cout<<"Pateiktas failas dekoduotas\n\n";
+        if (decodeFile(filename.c_str()))
+        {
+            std::cout<<"Pateiktas failas dekoduotas\n\n";
+        }
         return 0;
     }
 
@@ -87,12 +89,13 @@ int main(int argc, char *argv[])
 
     SuffixTree * stree = new SuffixTree (text);
 
+    std::cout<<"Formuojamas priesagu medis\n\n";
     for (UINT idx = 0; idx < filesize; ++idx)
     {
         stree->AddSuffix(idx, filesize - idx);
     }
 
-    std::cout<<"\n\nVykdomas priesagos medzio Tunstall algoritmas\n\n";
+    std::cout<<"Vykdomas priesagos medzio Tunstall algoritmas\n\n";
     UDICT_CHBUFF_UINT suffixDict = createTextDictionary(stree, codeWordLength, maxWordLength);
     encodedFileName = encodeFile(filename.c_str(), suffixDict, maxWordLength, codeWordLength, filesize, true);
 

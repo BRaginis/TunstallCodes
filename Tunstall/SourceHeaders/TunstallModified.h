@@ -59,6 +59,12 @@ Node* addMostFrequentNodeChildren(std::vector<Node*>& vocabularyNodes)
         iter++;
     }
 
+    // this means the dictionary nodes are all leaves and we need to stop
+    if (maxFrequency == 0)
+    {
+        return nullptr;
+    }
+
     // remove the entry and add all of its children
     auto children = (*mostFrequentEntry)->getChildren();
     Node * lastRemoved = *mostFrequentEntry;
@@ -90,8 +96,8 @@ UINT& maxWordLength
         codeWordLength++;
     }
 
-    Node* lastRemoved = nullptr;
-    while (vocabularyNodes.size() < sizeLimit)
+    Node* lastRemoved = stree->getRoot();
+    while (vocabularyNodes.size() < sizeLimit && lastRemoved != nullptr)
     {
         lastRemoved = addMostFrequentNodeChildren(vocabularyNodes);
     }

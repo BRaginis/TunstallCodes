@@ -152,7 +152,7 @@ UINT filesize
     free(byteSequence);
 }
 
-void decodeFile
+bool decodeFile
 (
 const char * filename
 )
@@ -163,7 +163,8 @@ const char * filename
     readStream.open(filename, std::ifstream::binary);
     if (!readStream.is_open())
     {
-        return;
+        std::cout<<"Nepavyko atidaryti failo dekodavimui\n\n";
+        return false;
     }
     readStream.seekg(0, std::ios_base::seekdir::_S_beg);
 
@@ -183,7 +184,8 @@ const char * filename
     if(!writeStream.is_open())
     {
         readStream.close();
-        return;
+        std::cout<<"Nepavyko atidaryti failo irasymui\n\n";
+        return false;
     }
 
     writeStream.seekp (0, std::ios_base::seekdir::_S_beg);
@@ -193,7 +195,7 @@ const char * filename
     readStream.close();
     writeStream.close();
 
-    return;
+    return true;
 }
 
 
